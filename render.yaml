@@ -20,4 +20,4 @@ services:
       - key: MIGRATION_DATABASE_URL # Neon project "xlr8", direct host
         sync: false
       - key: PUBLIC_ORIGIN
-        value: https://xlr8.onrender.com
+        value: https://xlr8-6q7t.onrender.com

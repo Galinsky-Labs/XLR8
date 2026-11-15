@@ -15,5 +15,19 @@
     "writer_fencing": false,
     "router": "none"
   },
-  "deployments": []
+  "deployments": [
+    {
+      "provider": "render",
+      "service": "xlr8",
+      "service_id": "srv-dbt0jhm7bikc73cmri30",
+      "url": "https://xlr8-6q7t.onrender.com",
+      "plan": "free",
+      "health_check": "/healthz",
+      "database": {
+        "provider": "neon",
+        "project": "xlr8",
+        "project_id": "billowing-moon-11889300"
+      }
+    }
+  ]
 }

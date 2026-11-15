@@ -1,5 +1,5 @@
 {
-  "repository": "neophilism/XLR8",
+  "repository": "Galinsky-Labs/XLR8",
   "title": "XLR8 conference application - approved 41-unit plan",
   "planVerified": true,
   "plannedPrCount": 41,
@@ -14,7 +14,9 @@
     {
       "id": "XLR8-C01",
       "title": "Bootstrap the conference application repository",
-      "prs": [],
+      "prs": [
+        2
+      ],
       "dependsOn": [],
       "externalDependencies": [
         {
@@ -42,7 +44,9 @@
     {
       "id": "XLR8-C02",
       "title": "Connect identities organizations and guest access",
-      "prs": [],
+      "prs": [
+        2
+      ],
       "dependsOn": [
         "XLR8-C01"
       ],
@@ -70,7 +74,9 @@
     {
       "id": "XLR8-C03",
       "title": "Implement events sessions and schedule persistence",
-      "prs": [],
+      "prs": [
+        2
+      ],
       "dependsOn": [
         "XLR8-C02"
       ],
@@ -91,7 +97,9 @@
     {
       "id": "XLR8-C04",
       "title": "Implement registration invitations and admission records",
-      "prs": [],
+      "prs": [
+        2
+      ],
       "dependsOn": [
         "XLR8-C03"
       ],
@@ -1057,5 +1065,15 @@
       }
     }
   ],
-  "pullRequests": []
+  "pullRequests": [
+    {
+      "id": 2,
+      "number": 2,
+      "title": "C01 bootstrap (partial), C02 identity, C03 events, C04 registration",
+      "state": "closed",
+      "url": "https://github.com/Galinsky-Labs/XLR8/pull/2",
+      "mergedAt": "2026-11-15",
+      "draft": false
+    }
+  ]
 }
