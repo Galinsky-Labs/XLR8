@@ -1,0 +1,9 @@
+{
+  "repository": "Galinsky-Labs/Browser-VR-Engine",
+  "contractPackage": "@browser-vr-engine/contracts",
+  "requiredRelease": "BVR-R12",
+  "status": "unreleased",
+  "pinnedCommit": null,
+  "observedOn": "2026-11-15",
+  "note": "XLR8 consumes only versioned engine interface packages. None is published yet; the engine is at F06 (provisional) / W01-W02. Until R12 the app exposes an explicit engine-unavailable state and no 3D room features."
+}

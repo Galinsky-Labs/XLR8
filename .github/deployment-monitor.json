@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "repository": "neophilism/XLR8",
-  "kind": "unclassified",
+  "repository": "Galinsky-Labs/XLR8",
+  "kind": "web-app",
   "monitoring": {
     "mode": "inventory"
   },
@@ -11,7 +11,7 @@
   },
   "failover": {
     "mode": "disabled",
-    "stateful": false,
+    "stateful": true,
     "writer_fencing": false,
     "router": "none"
   },
