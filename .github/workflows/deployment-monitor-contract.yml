@@ -9,4 +9,15 @@ permissions:
   contents: read
 jobs:
   contract:
-    uses: neophilism/Development-Deployment-Monitor/.github/workflows/validate-client.yml@main
+    # The former reusable validator (neophilism/Development-Deployment-Monitor)
+    # has no Galinsky-Labs equivalent, so this local inventory check is
+    # advisory only and never blocks merging.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate the inventory-only client contract (advisory)
+        run: node -e "const c=JSON.parse(require('fs').readFileSync('.github/deployment-monitor.json','utf8'));if(c.schema_version!==1||c.repository!=='Galinsky-Labs/XLR8'||c.monitoring?.mode!=='inventory'||c.budget?.monthly_usd_max!==0||!Array.isArray(c.deployments))process.exit(1)"
